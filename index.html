@@ -45,13 +45,13 @@
                     <input type="text" placeholder="Cerca o inizia una nuova chat">
                 </div>
                 <ul>
-                    <li class="contacts" v-for='(contact, index) in contacts'>
-                            <img class="user-img" src="img/avatar_1.jpg" alt="">
+                    <li class="contacts" v-for="(contact, index) in contacts">
+                            <img class="user-img" src="`img/avatar${contact.avatar}.jpg`" alt="">
                         <div>
-                            <h5>Michele</h5>
-                            <p>ok</p>
+                            <h5>{{ contact.name }}</h5>
+                            <p>{{ contact.messages[2].text}}</p>
                         </div>
-                        <span>20/12/2020 16:35:00</span>
+                        <span>{{ contact.messages[2].date }}</span>
                     </li>
                 </ul>
             </div>
