@@ -28,7 +28,7 @@ ul  {
 }
 
 .user-img  {
-    width: 2.5em;
+    width: 4em;
     border-radius: 50%;
 }
 
@@ -111,7 +111,7 @@ i  {
 
 .contacts span  {
     font-size: 0.5em;
-    width: 100%;
+    width: 50%;
     text-align: right;
 }
 

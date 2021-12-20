@@ -15,7 +15,7 @@
     <main>
 
         <!-- container -->
-        <div class="container">
+        <div id='app' class="container">
 
             <!-- nav -->
             <div class="nav">
@@ -46,12 +46,12 @@
                 </div>
                 <ul>
                     <li class="contacts" v-for="(contact, index) in contacts">
-                            <img class="user-img" src="`img/avatar${contact.avatar}.jpg`" alt="">
+                            <img class="user-img" :src="`img/avatar${contact.avatar}.jpg`" alt="">
                         <div>
                             <h5>{{ contact.name }}</h5>
-                            <p>{{ contact.messages[2].text}}</p>
+                            <p>{{ contact.messages[0].text}}</p>
                         </div>
-                        <span>{{ contact.messages[2].date }}</span>
+                        <span>{{ contact.messages[0].date }}</span>
                     </li>
                 </ul>
             </div>
