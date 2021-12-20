@@ -3,3 +3,70 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+html  {
+    font-size: 100%;
+    font-family: sans-serif;
+}
+
+/* utilities */
+.d-flex  {
+    display: flex;
+}
+/* general */
+main  {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(#009688 0, #009688 20vh, #dcdbd3 20vh, #dcdbd3 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul  {
+    list-style: none;
+}
+
+.user-img  {
+    width: 2.5em;
+    border-radius: 50%;
+}
+
+i  {
+    color: #b1b1b1;
+}
+
+/* main */
+.container  {
+    height: 95%;
+    width: 80%;
+    display: flex;
+}
+
+.nav  {
+    height: 100%;
+    width: 35%;
+    background-color: coral;
+}
+
+.chat  {
+    height: 100%;
+    width: 65%;
+    background-color: darkgreen;
+}
+
+.user  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.user-profile  {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.user-profile p  {
+    font-weight: bold;
+    font-size: 0.8em;
+}
