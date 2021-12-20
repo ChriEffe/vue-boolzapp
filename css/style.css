@@ -21,14 +21,17 @@ main  {
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 ul  {
+    height: 100%;
     list-style: none;
+    overflow-y: auto;
 }
 
 .user-img  {
-    width: 4em;
+    height: 4em;
     border-radius: 50%;
 }
 
@@ -42,7 +45,7 @@ i  {
 
 /* main */
 .container  {
-    height: 95%;
+    height: 90%;
     width: 80%;
     display: flex;
 }
@@ -101,6 +104,7 @@ i  {
 
 .input input  {
     width: 80%;
+    border: none;
 }
 
 .contacts  {
@@ -115,16 +119,26 @@ i  {
     text-align: right;
 }
 
+li p  {
+    font-size: 0.8em;
+}
+
 /* chat */
 .chat  {
+    height: calc(100% - 130px);
     background-image: url(../img/mine.jpg);
-    height: 86%;
     display: flex;
     flex-direction: column;
     padding: 3em 5em;
+    overflow-y: auto;
 }
 
 .message  {
+    height: 50px;
+    background-color: #eaeaea;
+    position: sticky;
+    bottom: 0;
+    right: 0;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -137,8 +151,7 @@ i  {
 
 .message input  {
     width: 80%;
-    margin-top: 10px;
-    line-height: 3em;
+    padding: 0.6em;
 }
 
 .received  {
