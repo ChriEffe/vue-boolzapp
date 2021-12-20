@@ -36,6 +36,10 @@ i  {
     color: #b1b1b1;
 }
 
+.active  {
+    background-color: #e9ebeb;
+}
+
 /* main */
 .container  {
     height: 95%;
@@ -45,16 +49,16 @@ i  {
 
 /* nav */
 .nav  {
-    height: 100%;
     width: 35%;
     background-color: #eaeaea;
+    border-right: 1px solid #b1b1b1;
 
 }
 
-.chat  {
-    height: 100%;
+.right-col  {
     width: 65%;
-    background-color: darkgreen;
+    background-color: #eaeaea;
+
 }
 
 .user  {
@@ -67,11 +71,6 @@ i  {
     display: flex;
     align-items: center;
     gap: 2px;
-}
-
-.user-profile p  {
-    font-weight: bold;
-    font-size: 0.8em;
 }
 
 .notify  {
@@ -100,6 +99,73 @@ i  {
     padding: 0.2em;
 }
 
-input  {
+.input input  {
     width: 80%;
+}
+
+.contacts  {
+    display: flex;
+    gap: 10px;
+    padding: 0.5em;
+}
+
+.contacts span  {
+    font-size: 0.5em;
+    width: 100%;
+    text-align: right;
+}
+
+/* chat */
+.chat  {
+    background-image: url(../img/mine.jpg);
+    height: 86%;
+    display: flex;
+    flex-direction: column;
+    padding: 3em 5em;
+}
+
+.message  {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.message i  {
+    color: #6b7376;
+    font-size: 1.5em;
+}
+
+.message input  {
+    width: 80%;
+    margin-top: 10px;
+    line-height: 3em;
+}
+
+.received  {
+    align-self: flex-start;
+    background-color: white;
+}
+
+.sent  {
+    align-self: flex-end;
+    background-color: #d5f9ba;
+}
+
+.received,
+.sent  {
+    border-radius: 0.6em;
+    padding: 0.6em;
+    display: flex;
+    flex-direction: column;
+}
+
+.received p,
+.sent p  {
+    font-size: 0.5em;
+    align-self: flex-end;
+}
+
+.received h6, 
+.sent h6  {
+    align-self: start;
 }

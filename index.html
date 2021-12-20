@@ -13,12 +13,16 @@
 </head>
 <body>
     <main>
+
+        <!-- container -->
         <div class="container">
+
+            <!-- nav -->
             <div class="nav">
                 <div class="user">
                     <div class="user-profile">
                         <img class="user-img" src="img/avatar_1.jpg" alt="">
-                        <p>Nome Utente</p>
+                        <h5>Nome Utente</h5>
                     </div>
                     <div class="icons">
                         <i class="fas fa-circle-notch"></i>
@@ -41,14 +45,49 @@
                     <input type="text" placeholder="Cerca o inizia una nuova chat">
                 </div>
                 <ul>
-                    <li v-for='(contact, index) in contacts'>
-                        <img src="" alt="">
-                        <h5></h5>
-                        <p></p>
+                    <li class="contacts" v-for='(contact, index) in contacts'>
+                            <img class="user-img" src="img/avatar_1.jpg" alt="">
+                        <div>
+                            <h5>Michele</h5>
+                            <p>ok</p>
+                        </div>
+                        <span>20/12/2020 16:35:00</span>
                     </li>
                 </ul>
             </div>
-            <div class="chat"></div>
+
+            <!-- right col -->
+            <div class="right-col">
+                <div class="user">
+                    <div class="user-profile">
+                        <img class="user-img" src="img/avatar_2.jpg" alt="">
+                        <h5>Nome</h5>
+                        <p></p>
+                    </div>
+                    <div class="icons">
+                        <i class="fas fa-search"></i>
+                        <i class="fas fa-paperclip"></i>
+                        <i class="fas fa-ellipsis-v"></i>
+                    </div>
+                </div>
+
+                <!-- chat -->
+                <div class="chat">
+                    <div class="received">
+                        <h6>La Marianna va in campagna</h6>
+                        <p>28/03/2020 10:10:40</p>
+                    </div>
+                    <div class="sent">
+                        <h6>Sicuro di non aver sbagliato chat?</h6>
+                        <p>28/03/2020 16:15:22</p>
+                    </div>
+                </div>
+                <div class="message">
+                    <i class="far fa-smile"></i>
+                    <input type="text" placeholder="Scrivi un messaggio">
+                    <i class="fas fa-microphone"></i>
+                </div>
+            </div>
         </div>
     </main>
     <script src="js/script.js"></script>
