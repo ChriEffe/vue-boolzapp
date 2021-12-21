@@ -28,7 +28,7 @@ main  {
 }
 
 ul  {
-    height: calc(100% - 70px - 70px - 25px);
+    height: calc(100% - 70px - 80px - 25px);
     list-style: none;
     overflow-y: auto;
 }
@@ -43,7 +43,7 @@ i  {
 }
 
 .active  {
-    background-color: #e9ebeb;
+    background-color: grey;
 }
 
 /* main */
@@ -114,7 +114,8 @@ i  {
 }
 
 li  {
-    height: 70px;
+    height: 80px;
+    cursor: pointer;
 }
 
 .contacts  {
@@ -179,6 +180,7 @@ li p  {
 .sent  {
     border-radius: 0.6em;
     padding: 0.6em;
+    margin: 0.5em 0;
     display: flex;
     flex-direction: column;
 }

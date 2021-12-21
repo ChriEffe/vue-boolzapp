@@ -109,6 +109,9 @@ const app = new Vue(
                 let getLastMessageDate = this.contacts[index].messages[getLastMessage].date;
 
                 return getLastMessageDate;
+            },
+            changeContact: function (index) {
+                this.counter = index;
             }
         }
     }
