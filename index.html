@@ -49,9 +49,9 @@
                             <img class="user-img" :src="`img/avatar${contact.avatar}.jpg`" alt="">
                         <div>
                             <h5>{{ contact.name }}</h5>
-                            <p>{{ contact.messages[0].text }}</p>
+                            <p>{{ textView(index) }}</p>
                         </div>
-                        <span>{{ contact.messages[0].date }}</span>
+                        <span>{{ dateView(index) }}</span>
                     </li>
                 </ul>
             </div>
@@ -62,8 +62,8 @@
                     <div class="user-profile">
                         <img class="user-img" src="img/avatar_1.jpg" alt="">
                         <div>
-                            <h5>Michele</h5>
-                            <p class="fs_08">Ultimo accesso</p>
+                            <h5>{{ contacts[counter].name }}</h5>
+                            <p class="fs_08">Ultimo accesso {{ dateView(counter) }}</p>
                         </div>
                     </div>
                     <div class="icons">
@@ -74,14 +74,10 @@
                 </div>
 
                 <!-- chat -->
-                <div class="chat">
-                    <div class="received">
-                        <h6>La Marianna va in campagna</h6>
-                        <p>28/03/2020 10:10:40</p>
-                    </div>
-                    <div class="sent">
-                        <h6>Sicuro di non aver sbagliato chat?</h6>
-                        <p>28/03/2020 16:15:22</p>
+                <div v:for="" class="chat">
+                    <div>
+                        <h6>{{  }}</h6>
+                        <p>{{  }}</p>
                     </div>
                 </div>
                 <div class="message">
