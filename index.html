@@ -75,6 +75,7 @@
 
                 <!-- chat -->
                 <div class="chat">
+                    <!-- nome del tuo utente + il numero di quel messaggio per rendere il codice univoco (:key="contacts[counter].name + index") -->
                     <div v-for="(message, index) in contacts[counter].messages" :key="contacts[counter].name + index" :class="(message.status == 'sent') ? 'sent' : 'received'">
                         <h6>{{ message.text }}</h6>
                         <p>{{ message.date }}</p>
@@ -82,7 +83,7 @@
                 </div>
                 <div class="message">
                     <i class="far fa-smile"></i>
-                    <input @keyup.enter="sendMessage(index)" v-model="newMessage" type="text" placeholder="Scrivi un messaggio">
+                    <input @keyup.enter="sendMessage(counter)"  v-model="newMessage" type="text" placeholder="Scrivi un messaggio">
                     <i class="fas fa-microphone"></i>
                 </div>
             </div>
