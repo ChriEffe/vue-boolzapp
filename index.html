@@ -75,7 +75,7 @@
 
                 <!-- chat -->
                 <div class="chat">
-                    <div v-for="(message, index) in contacts[counter].messages" :class="(message.status == 'sent') ? 'sent' : 'received'">
+                    <div v-for="(message, index) in contacts[counter].messages" :key="contacts[counter].name + index" :class="(message.status == 'sent') ? 'sent' : 'received'">
                         <h6>{{ message.text }}</h6>
                         <p>{{ message.date }}</p>
                     </div>
