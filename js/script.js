@@ -134,6 +134,13 @@ const app = new Vue(
                 }
                 this.contacts[this.counter].messages.push(obj);
                 this.newMessage = '';
+                setTimeout(() => {
+                    this.contacts[this.counter].messages.push({
+                        date: "10/01/2020 15:30:56",
+                        text: 'ok',
+                        status: "received",
+                    })
+                }, 1000);
             }
         }
     }
