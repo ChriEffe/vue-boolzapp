@@ -22,6 +22,7 @@ const app = new Vue(
     {
         el: '#app',
         data: {
+            textFilter: '',
             newMessage: '',
             counter: 0,
             contacts: [
@@ -141,6 +142,15 @@ const app = new Vue(
                         status: "received",
                     })
                 }, 1000);
+            },
+            searchText: function () {
+                this.contacts.forEach(element => {
+                    if (element.name.toLowerCase().includes(this.textFilter.toLowerCase())) {
+                        element.visible = true;
+                    } else {
+                        element.visible = false;
+                    }
+                });
             }
         }
     }
