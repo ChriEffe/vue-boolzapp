@@ -17,6 +17,15 @@ html  {
 .fs_08  {
     font-size: 0.8em;
 }
+
+.p-relative  {
+    position: relative;
+}
+
+.border-b  {
+    border-bottom: 1px solid black;
+}
+
 /* general */
 main  {
     height: 100vh;
@@ -194,4 +203,21 @@ li p  {
 .received h6, 
 .sent h6  {
     align-self: start;
+}
+
+.message-info  {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: -50%;
+    right: -60px;
+    font-size: 0.7em;
+    z-index: 20;
+    background-color: rgba(189, 178, 178, 0.945);
+    border-radius: 5px;
+    padding: 0.2em;
+}
+
+.fa-chevron-down  {
+    align-self: flex-end;
 }
