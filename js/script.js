@@ -35,16 +35,19 @@ const app = new Vue(
                             date: "10/01/2020 15:30:55",
                             text: "Hai portato a spasso il cane?",
                             status: "sent",
+                            info: 'false',
                         },
                         {
                             date: "10/01/2020 15:50:00",
                             text: "Ricordati di dargli da mangiare",
                             status: "sent",
+                            info: 'false',
                         },
                         {
                             date: "10/01/2020 16:15:22",
                             text: "Tutto fatto!",
                             status: "received",
+                            info: 'false',
                         },
                     ],
                 },
@@ -151,6 +154,9 @@ const app = new Vue(
                         element.visible = false;
                     }
                 });
+            },
+            deleteMessage: function (index) {
+                this.contacts[this.counter].messages.splice(index, 1);
             }
         }
     }

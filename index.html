@@ -79,10 +79,10 @@
                     <div class="p-relative" v-for="(message, index) in contacts[counter].messages" :key="contacts[counter].name + index" :class="(message.status == 'sent') ? 'sent' : 'received'">
                         <h6>{{ message.text }}</h6>
                         <p>{{ message.date }}</p>
-                        <i class="fas fa-chevron-down"></i>
-                        <div class="message-info">
+                        <i @click="message.info = !message.info" class="fas fa-chevron-down"></i>
+                        <div v-show="!message.info" class="message-info">
                             <span class="border-b">Message info</span>
-                            <span>Delete message</span>
+                            <span @click="deleteMessage(index)">Delete message</span>
                         </div>
                     </div>
                 </div>
